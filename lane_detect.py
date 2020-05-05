@@ -57,7 +57,7 @@ def segment(edge_frame):
     # When we do a bit-wise and with the mask
     # Only the lane edges will be retained
     # Since all the area in the lane is white
-    return cv2.bitwise_and(frame, mask)
+    return cv2.bitwise_and(edge_frame, mask)
 
 
 def get_line_coordinates(frame, slope, intercept):
